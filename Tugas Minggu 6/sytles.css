@@ -1,0 +1,63 @@
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    animation: fadeIn 1s ease-in-out;
+    padding: 20px;
+    color: white;
+}
+
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideDown 1s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+}
+
+h1, h2 {
+    font-weight: 700; /* Bold untuk judul */
+}
+
+.card-title {
+    font-weight: 700; /* Bold untuk judul lagu */
+}
+
+.card-text.semibold {
+    font-weight: 600; /* Semi-Bold untuk nama penyanyi */
+}
+
+.card-text.regular {
+    font-weight: 400; /* Regular untuk deskripsi */
+}
+
+.list-group-item {
+    font-weight: 400; /* Regular untuk daftar genre */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
